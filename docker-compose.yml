@@ -1,0 +1,18 @@
+version: '3'
+services:
+  php-app:
+    build: .
+    ports:
+      - "8081:80"
+    container_name: my-mysql-container    
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: test12345
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test12345
+      container_name: my-mysql-container
+

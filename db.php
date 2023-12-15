@@ -1,8 +1,8 @@
 <?php
 
-define('DB_SERVER', 'db_instance_endpoint');
-define('DB_USERNAME', 'tutorial_user');
-define('DB_PASSWORD', 'master password');
-define('DB_DATABASE', 'sample');
+define('DB_SERVER', 'mysql');
+define('DB_USERNAME', 'test');
+define('DB_PASSWORD', 'test12345');
+define('DB_DATABASE', 'test');
 
 ?>
